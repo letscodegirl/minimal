@@ -1,0 +1,137 @@
+/* Our Services */
+
+.hover-container {
+    background-size: cover;
+    background-position: center;
+  }
+  
+.hover-overlay {
+    position: relative;
+    padding-bottom: 100%;
+    color: rgba(255, 255, 255, 0);
+    /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
+    transition: all 0.3s;
+}
+
+.hover-overlay:hover {
+    background-color: rgba(60, 60, 60, 0.7);
+    color: white;
+}
+
+.hover-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hover-innerp {
+    margin-bottom: 0;  
+}
+
+/* Footer Styles */
+header nav a {
+    margin: 0.5rem;
+}
+
+/* Footer Styles */
+footer nav a {
+    display:block;
+    padding: 0.25rem;
+    font-size: 0.9rem;
+}
+
+/* Images */
+.bg-header_image {
+    background-image: url("/images/minimal-1.jpg");
+}
+
+.bg-wwa_image {
+    background-image: url("images/minimal-5.jpg");
+}
+.bg-contact_image {
+    background-image: url("images/minimal-12.jpg");
+}
+
+/* Contact */
+input, textarea {
+    border-style: solid;
+    border: 2px solid rgb(200, 200, 205);
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid #e67e22;
+    /* featured color */
+  }
+  
+  textarea {
+    min-height: 7em;
+  }
+  
+  input[type="submit"] {
+    width: auto;
+    display: block;
+  }
+  
+  .email-signup input {
+    width: 30%;
+    display: inline-block;
+    max-width: 250px;
+    margin-top:1rem;
+  }
+  
+  .email-signup .button-solid {
+    padding: 0.8em;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+  form .button {
+    width:100%;
+  }
+
+@media(max-width:768px) {
+    .email-signup input {
+    width: 100%;
+    max-width: 100%;
+    }
+}
+
+/* Hamburger Style */
+
+.hamburger-button {
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Styles when the hamburger button is active  */
+.hamburger-button.active{
+  background-color: rgb(120 53 15);
+}
+
+.mobile-menu {
+  display: none; 
+  background-color: rgba(144, 60, 7, 0.8); 
+  padding: 5%;
+  position: fixed; 
+  top:0;
+  left:0;
+  right:0;
+  text-align: center;
+}
+
+.mobile-menu a {
+  text-decoration: none; 
+  color: ghostwhite; 
+  padding: 1vh 5%;
+  display: block;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'display': ['Montserrat', 'sans-serif']
+                    },
+                    colors: {
+                        'sand': '#EAE6DE',
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>IOC Project 1</title>
+</head>
+
+<body class="bg-sand">
+
+    <header class="bg-no-repeat bg-cover bg-header_image aspect-video">
+        <div class="flex justify-around px-8 py-4 border-b-2 border-b-amber-800 text-amber-800">
+            <nav class="max-sm:hidden">
+                <a href="#"> Nav 1 </a>
+                <a href="#"> Nav 2 </a>
+                <a href="#"> Nav 3 </a>
+            </nav>
+            <div class="text-center">
+                <a href="/">
+                    <h2 class="text-xl text-white logo md:text-3xl"> LOGO </h2>
+                </a>
+            </div>
+            <nav class="max-sm:hidden">
+                <a href="#"> Nav 4 </a>
+                <a href="#"> Nav 5 </a>
+                <a href="#"> Nav 6 </a>
+            </nav>
+            <nav class="sm:hidden hamburger-button">
+                <div class="space-y-2 ">
+                    <div class="w-8 h-0.5 bg-amber-900"></div>
+                    <div class="w-8 h-0.5 bg-amber-900"></div>
+                    <div class="w-8 h-0.5 bg-amber-900"></div>
+                </div>
+            </nav>
+        </div>
+        <div class="flex flex-col text-center items-center text-white p-[10%]">
+            <hr class="w-52">
+            <h2 class="p-8 uppercase text-7xl font-display"> This this a heading </h2>
+            <h3 class="font-sans not-bold"> This is a sub-heading </h3>
+        </div>
+    </header>
+
+    <div class="mobile-menu"> 
+        <nav> 
+            <a href="/"> Nav One </a>
+            <a href="/"> Nav Two </a>
+            <a href="/"> Nav Three </a>
+            <a href="/"> Nav Four </a>
+            <a href="/"> Nav Five </a>
+            <a href="/"> Nav Six </a>
+        </nav>
+    </div>
+
+    <!-- Our Services -->
+    <section class="p-[5%] text-left">
+        <h2 class="font-semibold uppercase"> Our Services </h2>
+        <div class="grid gap-4 py-4 md:grid-cols-3">
+            <div class="">
+                <div class="border hover-container border-stone-900" style="background-image:url('/images/minimal-2.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Flowers </h3>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 p-4 font-sans text-center">
+                    <h3 class="font-semibold uppercase">Duis Aute</h3>
+                    <hr class="border-t-black">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quisquam quia vel facilis a
+                        ipsa minus voluptatem temporibus incidunt laborum accusamus modi cupiditate, ipsum maiores sit
+                        in ab commodi.</p>
+                </div>
+            </div>
+            <div class="">
+                <div class="border hover-container border-stone-900" style="background-image:url('/images/minimal-3.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Stairs </h3>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 p-4 font-sans text-center">
+                    <h3 class="font-semibold uppercase">Duis Aute</h3>
+                    <hr class="border-t-black">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quisquam quia vel facilis a
+                        ipsa minus voluptatem temporibus incidunt laborum accusamus modi cupiditate, ipsum maiores sit
+                        in ab commodi.</p>
+                </div>
+            </div>
+            <div class="">
+                <div class="border hover-container border-stone-900" style="background-image:url('/images/minimal-4.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Woman </h3>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 p-4 font-sans text-center">
+                    <h3 class="font-semibold uppercase">Duis Aute</h3>
+                    <hr class="border-t-black">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque qui quisquam quia vel facilis a
+                        ipsa minus voluptatem temporibus incidunt laborum accusamus modi cupiditate, ipsum maiores sit
+                        in ab commodi.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="grid grid-cols-12 bg-cover border border-black divide-x divide-y divide-black bg-wwa_image">
+        <div class="md:col-span-3"></div>
+        <div class="col-span-10 md:col-span-4 min-h-[60vh] bg-sand p-6 py-24">
+            <h1 class="text-3xl uppercase">Who We Are</h1>
+            <p class="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro expedita quas deleniti consectetur amet nesciunt quia repudiandae, impedit id soluta vitae nam consequatur. Libero magni ipsum molestiae, eius adipisci eligendi.</p>
+            <div class="uppercase">
+                <a class="p-1 px-3 border border-black" href="">Find Out More</a>
+            </div>
+        </div>
+        <div class="md:col-span-5"></div>
+        <div class="col-span-6 p-2 text-center md:col-span-2 bg-sand">Brand Name</div>
+        <div class="col-span-6 p-2 text-center md:col-span-2 bg-sand">Brand Name</div>
+        <div class="col-span-6 p-2 text-center md:col-span-2 bg-sand">Brand Name</div>
+        <div class="col-span-6 p-2 text-center md:col-span-2 bg-sand">Brand Name</div>
+        <div class="col-span-6 p-2 text-center md:col-span-2 bg-sand">Brand Name</div>
+        <div class="col-span-6 p-2 text-center md:col-span-2 bg-sand">Brand Name</div>
+
+    </section>
+
+    <!-- Duis Aute Irure -->
+    <section class="text-center p-[5%]">
+        <div class="flex flex-col max-w-lg gap-4 p-6 mx-auto">
+            <h1 class="text-5xl font-display">Duis Aute Irure</h1>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quos voluptatum dolores hic aspernatur ipsam provident, delectus debitis iste recusandae perferendis fugit dicta reprehenderit minima eius voluptatem alias ex odit?</p>
+        </div>
+        <div class="grid gap-4 py-4 md:grid-cols-3">
+            <div class="border border-stone-900">
+                <div class="hover-container" style="background-image:url('/images/minimal-6.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Flowers </h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-stone-900">
+                <div class="hover-container" style="background-image:url('/images/minimal-7.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Stairs </h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-stone-900">
+                <div class="hover-container" style="background-image:url('/images/minimal-8.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Hair </h3>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-stone-900">
+                <div class="hover-container" style="background-image:url('/images/minimal-9.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Stairs </h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-stone-900">
+                <div class="hover-container" style="background-image:url('/images/minimal-10.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Lamp </h3>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-stone-900">
+                <div class="hover-container" style="background-image:url('/images/minimal-11.jpg')">
+                    <div class="hover-overlay">
+                        <div class="text-center hover-inner">
+                            <h3> Secret Stair </h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-8 uppercase">
+            <a class="p-1 px-3 border border-black" href="">Sign Up</a>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="grid border border-black divide-x divide-y divide-black md:grid-cols-2">
+        <div class="bg-contact_image"></div>
+        <div class="p-[5%] px-10">
+            <h2 class="py-4 text-2xl uppercase">Contact Us</h2>
+            <form class="grid gap-4" action="https://formspree.io/hello@company.com" method="POST">
+                <div class="block">
+                    <input class="bg-transparent border-b border-transparent border-b-black placeholder:text-black" type="text" name="name" placeholder="Name">
+                </div>
+                <div class="">
+                    <input class="bg-transparent border-b border-transparent border-b-black placeholder:text-black" type="email" name="_replyto" placeholder="Email">
+                </div>
+                <div class="col-span-full">
+                    <p>Message</p>
+                    <textarea class="bg-transparent border border-black" placeholder="" class="mb-4"></textarea>
+                    <input class="items-end p-2 px-4 mt-2 ml-auto bg-transparent border border-black" type="submit" value="Send" class="button">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="grid md:grid-cols-10 p-5p">
+        <!-- column -->
+        <div class="col-span-10 p-4 md:pr-8 md:col-span-3">
+            <h2 class="text-2xl"> Logo </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. </p>
+        </div>
+
+        <!-- column -->
+        <div class="col-span-5 p-4 sm:col-span-2">
+            <h4 class="text-xl uppercase"> Our Services </h4>
+            <nav>
+                <a href="#"> Lorem ipsum </a>
+                <a href="#"> Dolor sit </a>
+                <a href="#"> Consectetur </a>
+                <a href="#"> Ut enim ad </a>
+            </nav>
+        </div>
+
+        <!-- column -->
+        <div class="col-span-5 p-4 sm:col-span-2">
+            <h4 class="text-xl uppercase"> Explore </h4>
+            <nav>
+                <a href="#"> Lorem ipsum </a>
+                <a href="#"> Dolor sit </a>
+                <a href="#"> Consectetur </a>
+                <a href="#"> Ut enim ad </a>
+            </nav>
+        </div>
+
+        <!-- column -->
+        <div class="col-span-10 p-2 md:col-span-3">
+            <p class="p-2 text-xl uppercase">Subscribe to our Newsletter</p>
+            <form class="p-4">
+                <input class="bg-transparent border border-black" type="email" class=""></input>
+                <input class="items-end p-2 px-4 mt-2 ml-auto bg-transparent border border-black" type="submit" value="SUBSCRIBE" class="button">
+            </form>
+        </div>
+        <div class="col-span-10 border border-black">
+            <p class="py-10 px-28">Terms of Use</P>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
