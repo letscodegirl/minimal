@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
   }
-  
+
 .hover-overlay {
     position: relative;
     padding-bottom: 100%;
@@ -27,7 +27,7 @@
 }
 
 .hover-innerp {
-    margin-bottom: 0;  
+    margin-bottom: 0;
 }
 
 /* Footer Styles */
@@ -63,30 +63,30 @@ input, textarea {
     width: 100%;
     font-size: 1rem;
   }
-  
+
   input:focus,
   textarea:focus {
     outline: none;
     border: 2px solid #e67e22;
     /* featured color */
   }
-  
+
   textarea {
     min-height: 7em;
   }
-  
+
   input[type="submit"] {
     width: auto;
     display: block;
   }
-  
+
   .email-signup input {
     width: 30%;
     display: inline-block;
     max-width: 250px;
     margin-top:1rem;
   }
-  
+
   .email-signup .button-solid {
     padding: 0.8em;
     border-radius: 0;
@@ -116,10 +116,10 @@ input, textarea {
 }
 
 .mobile-menu {
-  display: none; 
-  background-color: rgba(144, 60, 7, 0.8); 
+  display: none;
+  background-color: rgba(144, 60, 7, 0.8);
   padding: 5%;
-  position: fixed; 
+  position: fixed;
   top:0;
   left:0;
   right:0;
@@ -127,8 +127,8 @@ input, textarea {
 }
 
 .mobile-menu a {
-  text-decoration: none; 
-  color: ghostwhite; 
+  text-decoration: none;
+  color: ghostwhite;
   padding: 1vh 5%;
   display: block;
   font-weight: normal;
